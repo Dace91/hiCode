@@ -1,0 +1,18 @@
+{
+    "name": "card/card",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antoine Lucsko",
+            "email": "antoine.lucsko@wanadoo.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}

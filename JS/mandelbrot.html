@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    (function () {
+
+        var Complex = {
+
+            ensemble: [],
+
+            add: function (a, b) {
+                return {x: a.x + b.x, y: a.y + b.y};
+            },
+
+            mult: function (a, b) {
+                return {x: a.x * b.x - a.y * b.y, y: a.x * b.y + a.y * b.x};
+            }
+        };
+
+        console.log(Complex.mult({x:10,y:2}, {x:10,y:2}));
+
+
+
+        function mandelbrot(c, ind)
+        {
+           var z = Complex.add(Complex.mult({x: c.x,y: c.y}, {x: c.x,y: c.y}), {x:0, y:0});
+            if(ind<10)
+            {
+                Complex.ensemble.push([z.x, z.y]);
+                ind++;
+                mandelbrot(z,ind);
+            }
+        }
+
+        var c = {x:0.1, y: 0.1};
+
+        //mandelbrot(c,0);
+
+        console.log(Complex.add(Complex.mult({x: c.x,y: c.y}, {x: c.x,y: c.y}), {x:0, y:0}));
+
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+@import "modules/reset";
+@import "modules/mixins";
+@import "modules/grid";
+@import "tools/sprite";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
+$font-gen: Roboto;
+$font-size-gen: 1.2rem;
+$bg-color: rgba(115, 8, 0, 0.9);
+$color-gen: #eee;
+$bg: "../images/bg.png";
+$h1-size: 1rem;
+
+html {
+  background: #eee url($bg);
+}
+
+body {
+  font: $font-size-gen $font-gen;
+  margin: 2rem auto;
+  color: $color-gen;
+  line-height: 1.4;
+  width: 90%;
+}
+
+[id=main] {
+  clear: both;
+  margin-top: 4rem;
+  text-align: justify;
+
+  :after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ------------------------------------------------- *\
+          Header
+\* ------------------------------------------------- */
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 4rem;
+  padding-top: 1rem;
+  line-height: 1rem;
+  background-color: $bg-color;
+  width: 100%;
+  z-index: 100;
+  h1 {
+    margin: 0;
+    color: #335271;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-shadow: 1px 1px 1px #fff;
+    text-decoration: none;
+  }
+  .header__logo {
+    float: left;
+  }
+
+  @include clearfix();
+}
+
+/* ------------------------------------------------- *\
+    menu
+\* ------------------------------------------------- */
+
+nav {
+  padding: 0;
+  margin-top: 0rem;
+  margin-left: 21rem;
+  display: block;
+
+  a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0 0 4px 0;
+    overflow: hidden;
+    color: #335271;
+    text-decoration: none;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    @include border-radius(10px);
+    transition: all .4s ease;
+  }
+
+  a:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+section {
+  @extend .col-3;
+}
+
+.square {
+  with: 250px;
+  height: auto;
+  transform: translateX(20px);
+}
+
+.socialize {
+  @extend .icon-face;
+}
+
+.bar {
+
+}
+
+h1 {
+  font-size: $h1-size;
+  @include respond-to(wide-screens) {
+    font-size: $h1-size * 1.5;
+  }
+}

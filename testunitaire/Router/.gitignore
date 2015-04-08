@@ -1,0 +1,4 @@
+/vendor
+composer.lock
+*.pyc
+/phpunit-report

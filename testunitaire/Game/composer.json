@@ -1,0 +1,22 @@
+{
+  "name": "game/game",
+  "description": "test PHPUnit Game Hangman",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tony",
+      "email": "antoine.lucsko@wanadoo.fr"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "": ["src/", "tests/"]
+
+    }
+  },
+  "require": {
+    "php": ">=5.4.0",
+   "symfony/yaml": "~3.0@dev"
+  }
+}

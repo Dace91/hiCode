@@ -1,0 +1,24 @@
+{
+    "name": "blog/blog",
+    "description": "simple MVC application",
+    "require": {
+        
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antoine Lucsko",
+            "email": "antoine.lucsko@wanadoo.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "": "src/"
+        }
+    }
+
+}

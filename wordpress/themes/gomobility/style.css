@@ -1,0 +1,39 @@
+/*
+Theme Name: gomobility
+Theme URI: http://gomobility.local
+Author: Antoine
+Author URI:http://gomobility.local/contact
+Description: Website for teaching
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom post type
+
+*/
+
+body{
+    margin:0;
+    padding: 0;
+}
+
+.tag{
+    padding-top: 70px;
+    background:#6f5499;
+    color:#FFF;
+}
+.navigation .breadcrumb{
+    float:left;
+    margin: 7px 10px;
+}
+
+.header {
+    margin-top: 35px;
+}
+
+.current-menu-item{
+    background: #CCC;
+}
+
+.glyphicon{
+    padding: 3px;
+}

@@ -1,0 +1,41 @@
+.icon{
+  display: inline-block;
+  background-image: url('../images/sprite.png');
+}
+
+.icon-A {
+  @extend .icon;
+  background-position: 0px 0px;
+  width: 220px;
+  height: 220px;
+}
+.icon-O {
+  @extend .icon;
+  background-position: -220px 0px;
+  width: 220px;
+  height: 220px;
+}
+.icon-face {
+  @extend .icon;
+  background-position: 0px -220px;
+  width: 220px;
+  height: 220px;
+}
+.icon-s {
+  @extend .icon;
+  background-position: -220px -220px;
+  width: 220px;
+  height: 220px;
+}
+.icon-skype {
+  @extend .icon;
+  background-position: -440px 0px;
+  width: 220px;
+  height: 220px;
+}
+.icon-twitter {
+  @extend .icon;
+  background-position: -440px -220px;
+  width: 220px;
+  height: 220px;
+}
