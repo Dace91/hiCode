@@ -21,6 +21,13 @@ class Active
         return false;
     }
 
+    /**
+     * call method is[Term] 
+     * 
+     * @param $name
+     * @param $arguments
+     * @return bool
+     */
     public function __call($name, $arguments)
     {
         if ((count($arguments) != 1) || strpos($name, 'is'))
